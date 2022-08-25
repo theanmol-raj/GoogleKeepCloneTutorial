@@ -1,10 +1,9 @@
-import Homescreen from "./Screens/Homescreen";
 
 
 function App() {
   return (
     <div className="App">
-      <Homescreen />
+      <h1 className=""></h1>
     </div>
   );
 }
