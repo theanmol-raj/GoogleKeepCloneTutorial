@@ -4,8 +4,8 @@ import Navbar from '../Components/Navbar';
 function Homescreen() {
   
   return (
-    <div className=''>
-        <Navbar showtitle="Keeper" />
+    <div className=' m-8'>
+        {/* <Navbar /> */}
         
     </div>
   )

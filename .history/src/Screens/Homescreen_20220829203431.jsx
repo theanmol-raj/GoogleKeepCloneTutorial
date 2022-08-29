@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Navbar from '../Components/Navbar';
 
 function Homescreen() {
   
+
   return (
-    <div className=''>
-        <Navbar showtitle="Keeper" />
-        
+    <div>
+        {/* <Navbar /> */}
     </div>
   )
 }

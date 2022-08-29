@@ -5,7 +5,7 @@ function Homescreen() {
   
   return (
     <div className=''>
-        <Navbar showtitle="Keeper" />
+        <Navbar />
         
     </div>
   )

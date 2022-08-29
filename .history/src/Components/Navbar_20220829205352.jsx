@@ -19,7 +19,7 @@ function Navbar(props) {
           className=" h-12"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Google_Keep_icon_%282020%29.svg/1200px-Google_Keep_icon_%282020%29.svg.png"
         />
-        <h1 className=" capitalize text-2xl text-gray-600/ ">{props.showtitle}</h1>
+        <h1 className=" capitalize text-2xl text-gray-600/ ">{props.}</h1>
       </div>
       <div className="w-full max-w-4xl">
         <input onClick={()=> setSearch(true)} onMouseLeave={()=>setSearch(false)} className={` cursor-pointer ${search ? 'bg-white shadow-md' : 'bg-gray-200' }  border rounded-3xl pl-8 pr-4  p-2 max-w-3xl w-full `} />
