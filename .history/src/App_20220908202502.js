@@ -7,8 +7,6 @@ import LoginScreen from "./Screens/LoginScreen";
 import AboutScreen from "./Screens/AboutScreen";
 
 
-
-
 function App() {
   const auth = getAuth(app);
   const provider = new GoogleAuthProvider();

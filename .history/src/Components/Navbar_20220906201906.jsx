@@ -38,7 +38,7 @@ function Navbar(props) {
           
           <button onClick={props.SO}>
           <img
-            className=" p-1 h-10 bg-gray-200 rounded-full"
+            className=" p-1 h-12  bg-gray-200 rounded-full"
             src={props.user?.photoURL}
           />
           </button>

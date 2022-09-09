@@ -5,7 +5,7 @@ import { getAuth, signInWithPopup ,GoogleAuthProvider ,signOut, onAuthStateChang
 import app from './Firebase';
 import LoginScreen from "./Screens/LoginScreen";
 import AboutScreen from "./Screens/AboutScreen";
-
+import { getFirestore } from "firebase/firestore";
 
 
 

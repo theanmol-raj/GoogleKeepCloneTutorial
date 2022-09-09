@@ -10,7 +10,7 @@ function Navbar(props) {
   const [search , setSearch] = useState(false);
 
   return (
-    <div className=" fixed top-0 w-screen px-3 py-2 z-50 flex justify-between items-center border-b border-gray-300 shadow-md bg-white">
+    <div className=" fixed top-0 w-screen px-3  z-50 flex justify-between items-center border-b border-gray-300 shadow-md bg-white">
       <div className=" flex justify-center items-center space-x-5">
         <button onClick={() => props.cont(!props.prev)} className=" hover:bg-gray-200 p-3 rounded-full cursor-pointer">
           <MenuIcon />
@@ -19,7 +19,7 @@ function Navbar(props) {
           className=" h-12"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Google_Keep_icon_%282020%29.svg/1200px-Google_Keep_icon_%282020%29.svg.png"
         />
-        <h1 className=" capitalize text-2xl text-gray-600 ">{props.showtitle}</h1>
+        <h1 className=" capitalize text-2xl text-gray-600/ ">{props.showtitle}</h1>
       </div>
       <div className="w-full max-w-4xl">
         <input placeholder="Search" onClick={()=> setSearch(true)} onMouseLeave={()=>setSearch(false)} className={` cursor-pointer ${search ? 'bg-white shadow-md' : 'bg-gray-200/80' }  border rounded-lg pl-8 pr-4  p-3 max-w-3xl w-full `} />
@@ -38,7 +38,7 @@ function Navbar(props) {
           
           <button onClick={props.SO}>
           <img
-            className=" p-1 h-10 bg-gray-200 rounded-full"
+            className=" p-1 bg-gray-200 rounded-full"
             src={props.user?.photoURL}
           />
           </button>

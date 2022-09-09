@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
-import Writer from "../Components/Writer";
 
 function Homescreen({ SO, user }) {
   const [sidebar, SetSidebar] = useState(false);
@@ -17,10 +16,10 @@ function Homescreen({ SO, user }) {
       />
       <div className="flex pt-[72px] h-full">
         <Sidebar sidebar={sidebar} />
-        <div className="w-full items-center ">
-        {/* data write on database */}
-          <Writer />
-          {/* Show the data from database */}
+        <div className="w-full ">
+          <div className=" w-full flex justify-center items-center ">
+            <input placeholder="Take Note" className=" py-2 px-6 rounded-lg w-1/3 mt-8 border-2 shadow-lg" />
+          </div>
           <div className=" grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
 
           </div>

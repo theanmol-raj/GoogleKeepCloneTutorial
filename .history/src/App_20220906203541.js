@@ -4,9 +4,6 @@ import { useEffect, useState } from "react";
 import { getAuth, signInWithPopup ,GoogleAuthProvider ,signOut, onAuthStateChanged } from "firebase/auth";
 import app from './Firebase';
 import LoginScreen from "./Screens/LoginScreen";
-import AboutScreen from "./Screens/AboutScreen";
-
-
 
 
 function App() {
@@ -47,13 +44,11 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={user ? <Homescreen user={user} SO={SignOut} /> : <LoginScreen SI={SignIn} />} />
-        <Route path="about" element={<AboutScreen />} />
+        <Route path="about" element={<h1>Hello About</h1>} />
       </Routes>
       
     </div>
   );
 }
-
-
 
 export default App;

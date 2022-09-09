@@ -4,9 +4,6 @@ import { useEffect, useState } from "react";
 import { getAuth, signInWithPopup ,GoogleAuthProvider ,signOut, onAuthStateChanged } from "firebase/auth";
 import app from './Firebase';
 import LoginScreen from "./Screens/LoginScreen";
-import AboutScreen from "./Screens/AboutScreen";
-
-
 
 
 function App() {
@@ -53,6 +50,13 @@ function App() {
     </div>
   );
 }
+
+function AboutScreen(){
+  return (<div>
+    About
+  </div>)
+}
+
 
 
 
