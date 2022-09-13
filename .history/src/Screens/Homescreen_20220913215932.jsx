@@ -22,9 +22,7 @@ function Homescreen({ SO, user }) {
         {/* data write on database */}
           <Writer />
           {/* Show the data from database */}
-          <div className=" max-w-7xl mx-auto pt-12">
           <Reader />
-          </div>
         </div>
       </div>
     </div>
