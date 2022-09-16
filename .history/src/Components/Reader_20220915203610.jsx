@@ -5,7 +5,7 @@ import Note from './Note';
 
 
 function Reader() {
-    const db = getFirestore(app);
+    const db = getFirestore(app) ;
     const [notes , SetNotes] = useState([]) ;
 
     useEffect(()=>

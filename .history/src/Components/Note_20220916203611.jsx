@@ -2,7 +2,6 @@ import React from 'react'
 import DeleteIcon from '@mui/icons-material/Delete';
 import {getFirestore , doc, deleteDoc } from "firebase/firestore";
 import app from '../Firebase';
-import { Link } from 'react-router-dom';
 
 function Note({data}) {
     const db = getFirestore(app) ;
@@ -11,17 +10,14 @@ function Note({data}) {
         if (!data) return ;
         await deleteDoc(doc(db, "Notes", data.id));
     }
-    
 
 
   return (
-    <Link to={`/NOTE/${data.id}`}>
-      <div className='px-2 py-6 border shadow-lg rounded-lg ' >
+    <div className='px-2 py-6 border shadow-lg rounded-lg ' >
     <p>{data.note}</p>
     <button>Update</button>
     <button className='' onClick={Delete}><DeleteIcon /></button>
     </div>
-    </Link>
   )
 }
 

@@ -49,7 +49,7 @@ function App() {
       <Routes>
         <Route path="/" element={user ? <Homescreen user={user} SO={SignOut} /> : <LoginScreen SI={SignIn} />} />
         <Route path="about" element={<AboutScreen />} />
-        <Route path="/NOTE/:id" element={<NoteScreen />}  />
+        <Route path="/note/:id" element={<NoteScreen />}  />
       </Routes>
       
     </div>

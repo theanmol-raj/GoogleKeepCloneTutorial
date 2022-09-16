@@ -5,7 +5,7 @@ import Note from './Note';
 
 
 function Reader() {
-    const db = getFirestore(app);
+    const db = getFirestore(app) ;
     const [notes , SetNotes] = useState([]) ;
 
     useEffect(()=>
@@ -14,7 +14,8 @@ function Reader() {
             dbphoto.forEach((doc) => {
                 newNotesArray.push({ id: doc.id , ...doc.data()});
             });
-            newNotesArray.reverse();
+            newNotesArray.reverse() ;
+            console.log(newNotesArray)
             SetNotes(newNotesArray);
 
           })

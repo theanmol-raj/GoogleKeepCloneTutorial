@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getFirestore , collection, addDoc ,updateDoc } from "firebase/firestore";
+import { getFirestore , collection, addDoc ,or  } from "firebase/firestore";
 import app from '../Firebase';
 
 function Writer() {
@@ -16,8 +16,6 @@ function Writer() {
       const { name , value  } = e.target;
         SetNoteData(prev => ({...prev ,[name] : value}))
     }
-
-    
 
     async function WritetoDB(e){
       if (notedata.note === "" || notedata.note === null || notedata.note === undefined) {
